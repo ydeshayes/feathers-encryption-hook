@@ -1,3 +1,4 @@
+[![Build Status](https://app.travis-ci.com/ydeshayes/feathers-encryption-hook.svg?branch=main)](https://app.travis-ci.com/ydeshayes/feathers-encryption-hook)
 # Feathers encryption hook
 
 This feathers hook is handling encryption in database for selected fields. It can encrypt before and decrypt data after.
