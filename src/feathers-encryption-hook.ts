@@ -12,10 +12,10 @@ export default (options: EncryptOptions) =>
   async function encrypt(context: HookContext): Promise<HookContext> {
     const algorithm =
       options.algorithm ||
-      context.app.get('encrytion')?.algorithm ||
+      context.app.get('encryption')?.algorithm ||
       context.app.get('authentication')?.algorithm
     const key =
-      options.key || context.app.get('encrytion')?.key || context.app.get('authentication')?.secret
+      options.key || context.app.get('encryption')?.key || context.app.get('authentication')?.secret
 
     if (!algorithm || !key) {
       throw Error('Missing key or algorithm')

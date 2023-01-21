@@ -33,7 +33,7 @@ app.set("authentication", {
 Create an encryption object in your configuation:
 
 ```js
-"encrytion", {
+"encryption", {
     key: "key",
     algorithm: "aes-256-cbc"
 }

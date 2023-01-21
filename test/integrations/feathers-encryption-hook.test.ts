@@ -3,13 +3,13 @@ const feathers = require('@feathersjs/feathers')
 import { Application } from '@feathersjs/feathers'
 import hook from '../../src/feathers-encryption-hook'
 
-describe('One field simple encryption tests with encrytion config', () => {
+describe('One field simple encryption tests with encryption config', () => {
   let app: Application
 
   beforeEach(() => {
     app = feathers()
 
-    app.set('encrytion', {
+    app.set('encryption', {
       key: '*F-JaNdRgUkXp2r5u8x/A?D(G+KbPeSh',
       algorithm: 'aes-256-cbc',
     })
@@ -121,13 +121,13 @@ describe('Simple encrypt/decrypt tests with custom config', () => {
   })
 })
 
-describe('Simple encrypt/decrypt tests with encrytion config', () => {
+describe('Simple encrypt/decrypt tests with encryption config', () => {
   let app: Application
 
   beforeEach(() => {
     app = feathers()
 
-    app.set('encrytion', {
+    app.set('encryption', {
       key: '*F-JaNdRgUkXp2r5u8x/A?D(G+KbPeSh',
       algorithm: 'aes-256-cbc',
     })
